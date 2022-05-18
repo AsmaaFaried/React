@@ -1,0 +1,10 @@
+{
+    "students":[
+        {"id":1,"name":"Asmaa","age":23,"email":"asmaa@gmail.com"},
+        {"id":2,"name":"sara","age":24,"email":"sara@gmail.com"},
+        {"id":3,"name":"Ali","age":25,"email":"Ali@gmail.com"},
+        {"id":4,"name":"Omar","age":12,"email":"Omar@gmail.com"},
+        {"id":5,"name":"Ahmed","age":20,"email":"Ahmed@gmail.com"},
+        {"id":6,"name":"Dina","age":30,"email":"Dina@gmail.com"}
+    ]
+}
