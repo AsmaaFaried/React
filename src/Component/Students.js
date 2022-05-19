@@ -25,8 +25,8 @@ let Students=({StudentsList})=>{
                             <td>{std.name}</td>
                             <td>{std.age}</td>
                             <td>{std.email}</td>
-                            <td>
-                            <NavLink to={"/students/"+std.id}>Details</NavLink>
+                            <td >
+                                <NavLink className="details" to={"/students/"+std.id}>Details</NavLink>
                             </td>
                         </tr>
                     )

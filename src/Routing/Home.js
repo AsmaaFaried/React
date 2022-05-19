@@ -11,11 +11,9 @@ class Home extends Component{
             newStd:StudentsList.students
         }
     } 
-    
-    
     addStudent=(std)=>{
-        const data=this.state.AllStudents.push(std);
-       this.setState({newStd:data});
+        const data=this.Setstate([...this.state.AllStudents,std]);
+        this.setState([...this.state.newStd,std]);
     } 
     render(){
         return(

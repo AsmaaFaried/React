@@ -5,7 +5,6 @@ let StudentDetails=()=>{
     return(
         <div>
            <h1> Hello Student Number:  {UserId} </h1>
-           
         </div>
     )
 }

@@ -7,7 +7,8 @@ class Register extends Component{
         this.state={
             stdname:"",
             age:"",
-            item:[]
+            item:[],
+            students:StudentsList.students
         }
     }
     add=(e)=>{
@@ -15,10 +16,9 @@ class Register extends Component{
         const name=this.state.stdname;
         const age=this.state.age;
         const email=name+"@gmail.com";
-        const id=Math.floor(1 + (Math.random() * (100-1)));
+        const id=this.state.students.length +1;
         let student={"id":id,"name":name,"age":age,"email":email};
-        // let student={"name":name,"age":age};
-        StudentsList.students.push(student);
+        this.state.students.push(student);
        console.log(student);
        this.setState({item:student});
     }
