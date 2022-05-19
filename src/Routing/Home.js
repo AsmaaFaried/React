@@ -12,8 +12,8 @@ class Home extends Component{
         }
     } 
     addStudent=(std)=>{
-        const data=this.Setstate([...this.state.AllStudents,std]);
-        this.setState([...this.state.newStd,std]);
+        this.setState({AllStudents:[...this.state.AllStudents,std]});
+        this.setState({newStd:[...this.state.newStd,std]}); 
     } 
     render(){
         return(
@@ -24,6 +24,7 @@ class Home extends Component{
             </div>
         )
     }
+ 
     
 }
 

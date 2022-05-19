@@ -6,7 +6,7 @@ let Header=()=>{
        <li><NavLink to={"/"}></NavLink></li>
         <li><NavLink to={"/home/"}>Home</NavLink></li>
         <li><NavLink to={"/about"}>About</NavLink></li>
-        <li><NavLink to={"/x"}>Error</NavLink></li>
+        <li><NavLink to={"/xxx"}>Error</NavLink></li>
       </ul>
     )
 }

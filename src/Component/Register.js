@@ -2,8 +2,8 @@ import { Component } from "react";
 import StudentsList from "../Component/students.json";
 class Register extends Component{
 
-    constructor(){
-        super();
+    constructor(props){
+        super(props);
         this.state={
             stdname:"",
             age:"",
@@ -12,7 +12,6 @@ class Register extends Component{
         }
     }
     add=(e)=>{
-        
         const name=this.state.stdname;
         const age=this.state.age;
         const email=name+"@gmail.com";
@@ -21,6 +20,7 @@ class Register extends Component{
         this.state.students.push(student);
        console.log(student);
        this.setState({item:student});
+       this.props.onKey(this.state.students);
     }
     stdName=(e)=>{
         this.setState({stdname:e.target.value});
